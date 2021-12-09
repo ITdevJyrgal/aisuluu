@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+a, a:hover {
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Some basic CSS overrides */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* End basic CSS override */
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  width: 90%;
+  max-width: 300px;
+  background-color: #1b0f23;
+  border-radius: 16px;
+  position: relative;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  text-align: center;
+  color: #f1f3f3;
+  background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
+}
+.profile:after {
+  content: "";
+  display: block;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 16px;
+  background-image: linear-gradient(135deg, #e500ff, #ff1863 20%, #1b2028 30%, #2c333e 100%);
+}
+
+.profile-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 175px;
+  height: 175px;
+  position: relative;
+}
+.profile-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.profile-username {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.profile-user-handle {
+  color: #7d8396;
+}
+
+.profile-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-actions > * {
+  margin: 0 0.25rem;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.15s ease;
+}
+.btn--primary {
+  border-radius: 99em;
+  background-color: #002991;
+  background-image: linear-gradient(135deg, #ad0bfc, #d906ff);
+  color: #fff;
+  padding: 0 1.375em;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-size: 150%;
+}
+.btn--icon {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 3px solid #606560;
+  color: #7d8396;
+  opacity: 0.6;
+}
+.btn--icon i {
+  font-size: 5.25em;
+}
+.btn--icon:hover, .btn--icon:focus {
+  border-color: #7d8396;
+  opacity: 1;
+}
+
+.profile-links {
+  margin-top: 3.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #7d8396;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+}
+.link i {
+  font-size: 2.25em;
+}
+
+.item {
+  font-size: 15px;
+  color: #8300f1;
+  padding-top: 25px;
+  filter: drop-shadow(2px 2px 2px #8200ff);
+  opacity: 1;
+}
+
+.item:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */
